@@ -11,21 +11,30 @@ class Home extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0,
             title: Text(
-              'Flutter demo',
-              style: TextStyle(color: Colors.deepPurple),
+              'StartBlok Actief',
+              style: TextStyle(color: Colors.deepPurple, fontWeight: FontWeight.bold),
             ),
 
           ),
-          body: Container(
-            width: MediaQuery.of(context).size.width,
-            height: 390,
-            decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage("assets/images/logo.png"),
-                    fit: BoxFit.cover)),
+          body: ListView(
+            children: [
+
+            ],
           )
       ),
 
     );
   }
 }
+
+
+
+class UpperPart extends StatelessWidget {
+  const UpperPart({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
