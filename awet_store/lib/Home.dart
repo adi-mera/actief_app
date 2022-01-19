@@ -21,7 +21,7 @@ class Home extends StatelessWidget {
           //floating action button position to center
 
           bottomNavigationBar: BottomAppBar( //bottom navigation bar on scaffold
-            color:Colors.deepPurpleAccent.shade400,
+            color:Colors.purpleAccent.shade700,
             shape: CircularNotchedRectangle(), //shape of notch
             notchMargin: 5, //notche margin between floating button and bottom appbar
             child: Row( //children inside bottom appbar
@@ -87,18 +87,18 @@ class UpperPart extends StatelessWidget {
               ),
             ),
             Padding(
-             padding: const EdgeInsets.only(top: 130, left: 20, right: 20),
+             padding: const EdgeInsets.only(top: 140, left: 20, right: 20),
               child:
                Container(
                 // margin: EdgeInsets.all(1) ,
                   decoration: const BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(20)), boxShadow: [
-                    BoxShadow(color: Colors.deepPurpleAccent, offset: Offset(2,2), blurRadius: 80),
+                    BoxShadow(color: Colors.deepPurple, offset: Offset(2,2), blurRadius: 30),
                   ]),
                   child: const ListTile(
                     leading: Icon(Icons.search, color: Colors.purpleAccent),
                     title: TextField(
                       decoration: InputDecoration(
-                          hintText: "            Search Here",
+                          hintText: "          Search Here",
                           border: InputBorder.none),
                     ),
                     trailing: Icon(
