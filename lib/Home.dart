@@ -48,7 +48,8 @@ class Home extends StatelessWidget {
           ),
           body: ListView(
             children: [
-              UpperPart()
+              UpperPart(),
+              LowerPart(),
 
             ],
           )
@@ -73,21 +74,23 @@ class UpperPart extends StatelessWidget {
             // BackgroundVideo(),
             Container(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height*0.45 ,
+              height: MediaQuery.of(context).size.height*0.40 ,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage("assets/images/logo.png"),
+                    image: AssetImage("assets/images/startblok.jpeg"),
                     fit: BoxFit.cover
                 ),
               ),
             ),
+
+                  //serach bar
             Padding(
-              padding: const EdgeInsets.only(top: 140, left: 20, right: 20),
+              padding: const EdgeInsets.only(top: 130, left: 20, right: 20),
               child:
               Container(
                 // margin: EdgeInsets.all(1) ,
                 decoration: const BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(20)), boxShadow: [
-                  BoxShadow(color: Colors.deepPurple, offset: Offset(2,2), blurRadius: 30),
+                  BoxShadow(color: Colors.deepPurple, offset: Offset(1,1), blurRadius: 40),
                 ]),
                 child: const ListTile(
                   leading: Icon(Icons.search, color: Colors.purpleAccent),
@@ -104,8 +107,37 @@ class UpperPart extends StatelessWidget {
               ),
             ),
           ],
+        ),
+      ],
+    );
+  }
+}
+
+
+class LowerPart extends StatelessWidget {
+  const LowerPart({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      alignment: Alignment.bottomCenter,
+      children: [
+        Stack(
+          children: [
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height*0.50 ,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage("assets/images/logo.png"),
+                    fit: BoxFit.cover
+                ),
+              ),
+            ),
+          ],
         )
       ],
     );
   }
 }
+
