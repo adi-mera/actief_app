@@ -1,21 +1,36 @@
 //import 'package:awet_store/video%20backg.dart';
-import 'package:flutter/material.dart';
+import 'dart:ui';
 
+import 'package:flutter/material.dart';
+//import 'package:flutter_icons/flutter_icons.dart';
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-
+        extendBodyBehindAppBar: true,
+        extendBody: true,
+        //App Bar
+          appBar: AppBar(
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+            leading: Icon(Icons.list, color: Colors.purpleAccent),
+            title:
+            Text(
+              'StartBlok Actief',
+              style: TextStyle(color: Colors.deepPurple, fontFamily: 'russo', fontSize: 25),
+            ),
+          ),
 
 
           floatingActionButton:FloatingActionButton( //Floating action button on Scaffold
             onPressed: (){
               //code to execute on button press
             },
-            child: Icon(Icons.send), //icon inside button
+            child: Icon(Icons.question_answer, size: 35,), //icon inside button
           ),
 
           floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -36,21 +51,13 @@ class Home extends StatelessWidget {
               ],
             ),
           ),
-          appBar: AppBar(
-            backgroundColor: Colors.transparent,
-            elevation: 0,
-            leading: Icon(Icons.list, color: Colors.purpleAccent),
-            title:
-              Text(
-                'StartBlok Actief',
-                style: TextStyle(color: Colors.deepPurple, fontFamily: 'russo', fontSize: 25),
-              ),
-          ),
+
+
+
           body: ListView(
             children: [
               UpperPart(),
               LowerPart(),
-
             ],
           )
       ),
@@ -67,7 +74,7 @@ class UpperPart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      alignment: Alignment.bottomCenter,
+      alignment: Alignment.topCenter,
       children: [
         Stack(
           children: [
@@ -82,6 +89,12 @@ class UpperPart extends StatelessWidget {
                 ),
               ),
             ),
+            // BackdropFilter(
+            //     filter: ImageFilter.blur(sigmaX: 2, sigmaY: 2),
+            //   child: Container(
+            //     color: Colors.transparent,
+            //   ),
+            // ),
 
                   //serach bar
             Padding(
