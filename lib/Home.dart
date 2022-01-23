@@ -82,7 +82,7 @@ class Home extends StatelessWidget {
                   "Home",
                   style: TextStyle(
                       color: Colors.purpleAccent.shade700,
-                      fontSize: 23,
+                      fontSize: 22,
                       fontFamily: 'mochiy'),
                 ),
                 onTap: () {},
