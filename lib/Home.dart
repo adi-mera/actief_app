@@ -371,7 +371,7 @@ class UpperPart extends StatelessWidget {
                       borderRadius: BorderRadius.circular(13),
                       color: Color.fromARGB(100, 22, 44, 33),
                     ),
-                    child: Text("Together For A Better Future",  style: TextStyle(fontSize: 20, color: Colors.amber, fontWeight: FontWeight.bold,)),
+                    child: Text("Together For A Better Future",  style: TextStyle(fontSize: 20, color: Colors.amber,)),
                   )
                 ],
               ),
