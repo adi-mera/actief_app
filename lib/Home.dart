@@ -330,12 +330,12 @@ class UpperPart extends StatelessWidget {
                   //SEARCH BAR
 
             Padding(
-              padding: const EdgeInsets.only(top: 130, left: 20, right: 20),
+              padding: const EdgeInsets.only(top: 120, left: 20, right: 20),
               child: Container(
                 // margin: EdgeInsets.all(1) ,
                 decoration: const BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    borderRadius: BorderRadius.all(Radius.circular(25)),
                     boxShadow: [
                       BoxShadow(
                           color: Colors.deepPurple,
@@ -360,18 +360,18 @@ class UpperPart extends StatelessWidget {
                    //TOGETHER
 
             Padding(
-              padding: const EdgeInsets.only(top: 210),
+              padding: const EdgeInsets.only(top: 200),
               child: Stack(
                 children: [
                   Container(
                     width: MediaQuery.of(context).size.width*0.7,
                    // margin: EdgeInsets.all(5),
-                    padding: EdgeInsets.all(20),
+                    padding: EdgeInsets.all(15),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(13),
                       color: Color.fromARGB(100, 22, 44, 33),
                     ),
-                    child: Text("Together For A Better Future",  style: TextStyle(fontSize: 15, color: Colors.amber, fontWeight: FontWeight.bold)),
+                    child: Text("Together For A Better Future",  style: TextStyle(fontSize: 20, color: Colors.amber, fontWeight: FontWeight.bold,)),
                   )
                 ],
               ),
