@@ -12,6 +12,7 @@ class Home extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        //backgroundColor: Colors.purple,
         extendBodyBehindAppBar: true,
         extendBody: true,
 
@@ -213,7 +214,7 @@ class Home extends StatelessWidget {
         floatingActionButton: FloatingActionButton(
           //Floating action button on Scaffold
           onPressed: () {
-            Scaffold.of(context).openDrawer();
+            //Scaffold.of(context).openDrawer();
             //code to execute on button press
           },
           child: Icon(
@@ -224,6 +225,9 @@ class Home extends StatelessWidget {
 
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         //floating action button position to center
+
+
+                   //BUTTOM BAR
 
         bottomNavigationBar: BottomAppBar(
           //bottom navigation bar on scaffold
@@ -275,7 +279,7 @@ class Home extends StatelessWidget {
         body: Stack(
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(0, 330, 0, 0),
+              padding: const EdgeInsets.fromLTRB(0, 300, 0, 0),
               child: LowerPart(),
             ),
             UpperPart(),
@@ -352,6 +356,23 @@ class UpperPart extends StatelessWidget {
                 ),
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.only(top: 210),
+              child: Stack(
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width*0.7,
+                   // margin: EdgeInsets.all(5),
+                    padding: EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Color.fromARGB(100, 22, 44, 33),
+                    ),
+                    child: Text("To Gether For A Better Future",  style: TextStyle(fontSize: 15, color: Colors.purpleAccent.shade700)),
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ],
@@ -374,12 +395,12 @@ class LowerPart extends StatelessWidget {
           children: [
             Container(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height * 0.55,
+              height: MediaQuery.of(context).size.height * 0.65,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage("assets/images/logo.png"),
                   fit: BoxFit.cover,
-                  opacity: 50,
+                 // opacity: 50,
                 ),
               ),
             ),
