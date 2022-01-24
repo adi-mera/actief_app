@@ -356,6 +356,9 @@ class UpperPart extends StatelessWidget {
                 ),
               ),
             ),
+
+                   //TOGETHER
+
             Padding(
               padding: const EdgeInsets.only(top: 210),
               child: Stack(
@@ -368,7 +371,7 @@ class UpperPart extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                       color: Color.fromARGB(100, 22, 44, 33),
                     ),
-                    child: Text("To Gether For A Better Future",  style: TextStyle(fontSize: 15, color: Colors.purpleAccent.shade700)),
+                    child: Text("Together For A Better Future",  style: TextStyle(fontSize: 15, color: Colors.amber, fontWeight: FontWeight.bold)),
                   )
                 ],
               ),
