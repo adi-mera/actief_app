@@ -84,6 +84,12 @@ flutter:
     - family: russo
       fonts:
         - asset: fonts/russo.ttf
+    - family: italian
+      fonts:
+        - asset: fonts/italian.ttf
+    - family: sedg
+      fonts:
+        - asset: fonts/sedg.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

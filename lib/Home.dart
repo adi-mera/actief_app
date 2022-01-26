@@ -37,15 +37,13 @@ class Home extends StatelessWidget {
           title: Text(
             'StartBlok Actief',
             style: TextStyle(
-                color: Colors.purpleAccent.shade700,
+                color: Colors.deepPurple.shade700,
                 fontFamily: 'russo',
-                fontSize: 27),
+                fontSize: 29),
           ),
         ),
 
-
-
-             //DRAWER
+        //DRAWER
 
         drawer: Drawer(
           backgroundColor: Colors.transparent,
@@ -53,30 +51,34 @@ class Home extends StatelessWidget {
           child: ListView(
             children: [
               UserAccountsDrawerHeader(
-                accountName: Text("Natalie Natalie", style: TextStyle(fontSize: 20),),
-                accountEmail: Text("natali123@gmail.com", style: TextStyle(fontSize: 16, color: Colors.amber, fontWeight: FontWeight.bold)),
-
+                accountName: Text(
+                  "Natalie Natalie",
+                  style: TextStyle(fontSize: 20),
+                ),
+                accountEmail: Text("natali123@gmail.com",
+                    style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.amber,
+                        fontWeight: FontWeight.bold)),
                 currentAccountPicture: CircleAvatar(
                   backgroundImage: NetworkImage(
-                      "https://startblokriekerhaven.nl/wp-content/uploads/2021/11/A5987B5A-65E6-4F39-8A8C-D73685F1FEF6_1_201_a-1536x1536.jpeg",),
-
+                    "https://startblokriekerhaven.nl/wp-content/uploads/2021/11/A5987B5A-65E6-4F39-8A8C-D73685F1FEF6_1_201_a-1536x1536.jpeg",
+                  ),
                 ),
-
                 decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                          color: Colors.deepPurple,
-                          offset: Offset(-60, 60),
-                          blurRadius: 170),
-                    ],
-                    borderRadius: BorderRadius.only(topRight: Radius.circular(20)),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.deepPurple,
+                        offset: Offset(-60, 60),
+                        blurRadius: 170),
+                  ],
+                  borderRadius:
+                      BorderRadius.only(topRight: Radius.circular(20)),
                   image: DecorationImage(
                     image: AssetImage("assets/images/blue.jpeg"),
                     fit: BoxFit.fill,
                   ),
                 ),
-
-
                 otherAccountsPictures: [
                   CircleAvatar(
                     backgroundColor: Colors.white,
@@ -99,33 +101,26 @@ class Home extends StatelessWidget {
                 title: Text(
                   "Home",
                   style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 21,
-                      fontFamily: 'oswald'),
+                      color: Colors.white, fontSize: 21, fontFamily: 'oswald'),
                 ),
                 onTap: () {},
               ),
               ListTile(
-                leading: Icon(Icons.calendar_today,
-                    color: Colors.white, size: 33),
+                leading:
+                    Icon(Icons.calendar_today, color: Colors.white, size: 33),
                 title: Text(
                   "Club House",
                   style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 21,
-                      fontFamily: 'oswald'),
+                      color: Colors.white, fontSize: 21, fontFamily: 'oswald'),
                 ),
                 onTap: () {},
               ),
               ListTile(
-                leading: Icon(Icons.account_box,
-                    color: Colors.white, size: 34),
+                leading: Icon(Icons.account_box, color: Colors.white, size: 34),
                 title: Text(
                   "About",
                   style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 21,
-                      fontFamily: 'oswald'),
+                      color: Colors.white, fontSize: 21, fontFamily: 'oswald'),
                 ),
                 onTap: () {},
               ),
@@ -135,9 +130,7 @@ class Home extends StatelessWidget {
                 title: Text(
                   "Products",
                   style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 21,
-                      fontFamily: 'oswald'),
+                      color: Colors.white, fontSize: 21, fontFamily: 'oswald'),
                 ),
                 onTap: () {},
               ),
@@ -147,45 +140,36 @@ class Home extends StatelessWidget {
                 title: Text(
                   "Information",
                   style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 21,
-                      fontFamily: 'oswald'),
+                      color: Colors.white, fontSize: 21, fontFamily: 'oswald'),
                 ),
                 onTap: () {},
               ),
               ListTile(
-                leading: Icon(Icons.question_answer,
-                    color: Colors.white, size: 34),
+                leading:
+                    Icon(Icons.question_answer, color: Colors.white, size: 34),
                 title: Text(
                   "Q & A",
                   style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 21,
-                      fontFamily: 'oswald'),
+                      color: Colors.white, fontSize: 21, fontFamily: 'oswald'),
                 ),
                 onTap: () {},
               ),
               ListTile(
-                leading: Icon(Icons.contact_mail,
-                    color: Colors.white, size: 34),
+                leading:
+                    Icon(Icons.contact_mail, color: Colors.white, size: 34),
                 title: Text(
                   "Contact",
                   style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 21,
-                      fontFamily: 'oswald'),
+                      color: Colors.white, fontSize: 21, fontFamily: 'oswald'),
                 ),
                 onTap: () {},
               ),
               ListTile(
-                leading: Icon(Icons.settings,
-                    color: Colors.white, size: 34),
+                leading: Icon(Icons.settings, color: Colors.white, size: 34),
                 title: Text(
                   "Settings",
                   style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 21,
-                      fontFamily: 'oswald'),
+                      color: Colors.white, fontSize: 21, fontFamily: 'oswald'),
                 ),
                 onTap: () {},
               )
@@ -193,23 +177,20 @@ class Home extends StatelessWidget {
           ),
         ),
 
-
-
-              //FLOATING ACTION BUTTOM
-    // appBar: AppBar(
-    // leading: Builder(
-    // builder: (context) => IconButton(
-    // icon: Icon(
-    // Icons.menu,
-    // color: Colors.purpleAccent.shade700,
-    // size: 35,
-    // ),
-    // onPressed: () {
-    // Scaffold.of(context).openDrawer();
-    // },
-    // ),
-    // ),
-
+        //FLOATING ACTION BUTTOM
+        // appBar: AppBar(
+        // leading: Builder(
+        // builder: (context) => IconButton(
+        // icon: Icon(
+        // Icons.menu,
+        // color: Colors.purpleAccent.shade700,
+        // size: 35,
+        // ),
+        // onPressed: () {
+        // Scaffold.of(context).openDrawer();
+        // },
+        // ),
+        // ),
 
         floatingActionButton: FloatingActionButton(
           //Floating action button on Scaffold
@@ -226,8 +207,7 @@ class Home extends StatelessWidget {
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         //floating action button position to center
 
-
-                   //BUTTOM BAR
+        //BUTTOM BAR
 
         bottomNavigationBar: BottomAppBar(
           //bottom navigation bar on scaffold
@@ -285,13 +265,13 @@ class Home extends StatelessWidget {
             UpperPart(),
           ],
         ),
+
       ),
     );
   }
 }
 
-
-      //UPPER PART
+//UPPER PART
 
 class UpperPart extends StatelessWidget {
   const UpperPart({Key? key}) : super(key: key);
@@ -326,11 +306,10 @@ class UpperPart extends StatelessWidget {
             //   ),
             // ),
 
-
-                  //SEARCH BAR
+            //SEARCH BAR
 
             Padding(
-              padding: const EdgeInsets.only(top: 120, left: 20, right: 20),
+              padding: const EdgeInsets.only(top: 140, left: 20, right: 20),
               child: Container(
                 // margin: EdgeInsets.all(1) ,
                 decoration: const BoxDecoration(
@@ -357,21 +336,25 @@ class UpperPart extends StatelessWidget {
               ),
             ),
 
-                   //TOGETHER
+            //TOGETHER
 
             Padding(
-              padding: const EdgeInsets.only(top: 200),
+              padding: const EdgeInsets.only(top: 210),
               child: Stack(
                 children: [
                   Container(
-                    width: MediaQuery.of(context).size.width*0.7,
-                   // margin: EdgeInsets.all(5),
-                    padding: EdgeInsets.all(15),
+                    width: MediaQuery.of(context).size.width * 0.6,
+                    margin: EdgeInsets.all(10),
+                    padding: EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(13),
-                      color: Color.fromARGB(100, 22, 44, 33),
+                      borderRadius: BorderRadius.circular(15),
+                      color: Color.fromARGB(150, 25, 44, 33),
                     ),
-                    child: Text("Together For A Better Future",  style: TextStyle(fontSize: 20, color: Colors.amber,)),
+                    child: Text("BUILDING A FUTURE TOGETHER.",
+                        style: TextStyle(
+                            fontSize: 23,
+                            color: Colors.yellow,
+                            fontFamily: 'sedg'),),
                   )
                 ],
               ),
@@ -383,8 +366,7 @@ class UpperPart extends StatelessWidget {
   }
 }
 
-
-          //LOWER PART
+//LOWER PART
 
 class LowerPart extends StatelessWidget {
   const LowerPart({Key? key}) : super(key: key);
@@ -403,10 +385,11 @@ class LowerPart extends StatelessWidget {
                 image: DecorationImage(
                   image: AssetImage("assets/images/logo.png"),
                   fit: BoxFit.cover,
-                 // opacity: 50,
+                  // opacity: 50,
                 ),
               ),
             ),
+            BlocksView(),
           ],
         )
       ],
@@ -414,9 +397,7 @@ class LowerPart extends StatelessWidget {
   }
 }
 
-
-
-             //Costom CLipper class with Path
+//Costom CLipper class with Path
 class WaveClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
@@ -454,3 +435,193 @@ class WaveClipper extends CustomClipper<Path> {
 
 
 
+class BlocksView extends StatelessWidget {
+  const BlocksView({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return
+       ListView(
+         children: [
+           Padding(
+             padding: const EdgeInsets.only(top: 20),
+             child: Stack(
+               children: [
+                 Container(
+                     width: MediaQuery.of(context).size.width,
+                     height: MediaQuery.of(context).size.height*0.37,
+                     margin: EdgeInsets.all(10),
+                     //padding: EdgeInsets.all(20),
+                     decoration: BoxDecoration(
+                       borderRadius: BorderRadius.circular(10),
+                       color: Color.fromARGB(150, 10, 50, 60),
+                     ),
+                     child: Container(
+                       alignment: AlignmentDirectional.topCenter,
+                       width: MediaQuery.of(context).size.width,
+                       height: MediaQuery.of(context).size.height,
+                       decoration: BoxDecoration(
+                         borderRadius: BorderRadius.circular(250),
+                         image: DecorationImage(
+                           image: AssetImage("assets/images/jumping peoples.jpg"),
+                         )
+                       ),
+                       child: Padding(
+                         padding: const EdgeInsets.only(top: 35),
+                         child: Text("A place to meet each other.",
+                           style: TextStyle(
+                               fontSize: 23,
+                               color: Colors.tealAccent,
+                               fontFamily: 'sedg'),),
+                       ),
+
+                     ),
+                     // child: Text("BUILDING A FUTURE TOGETHER.",
+                     //   style: TextStyle(
+                     //       fontSize: 23,
+                     //       color: Colors.yellow,
+                     //       fontFamily: 'sedg'),),
+                   ),
+                 Padding(
+                   padding: const EdgeInsets.only(top: 250, left: 30, right: 30),
+                   child: Container(
+                     alignment: AlignmentDirectional.bottomCenter,
+                     child: Text("On the outside areas of Startblok you will find sports fields and a clubhouse.",
+                     style: TextStyle(fontSize: 17, color: Colors.yellowAccent, fontWeight: FontWeight.bold ),),
+                   ),
+                 )
+               ],
+
+             ),
+           ),
+
+           Padding(
+             padding: const EdgeInsets.only(top: 20),
+             child: Stack(
+               children: [
+                 Container(
+                   width: MediaQuery.of(context).size.width,
+                   height: MediaQuery.of(context).size.height*0.37,
+                   margin: EdgeInsets.all(10),
+                   //padding: EdgeInsets.all(20),
+                   decoration: BoxDecoration(
+                     borderRadius: BorderRadius.circular(10),
+                     color: Color.fromARGB(150, 10, 50, 60),
+                   ),
+                   child: Container(
+                     alignment: AlignmentDirectional.topCenter,
+                     width: MediaQuery.of(context).size.width,
+                     height: MediaQuery.of(context).size.height,
+                     decoration: BoxDecoration(
+                         borderRadius: BorderRadius.circular(250),
+                         image: DecorationImage(
+                           image: AssetImage("assets/images/jumping peoples.jpg"),
+                         )
+                     ),
+                     child: Padding(
+                       padding: const EdgeInsets.only(top: 35),
+                       child: Text("A place to meet each other.",
+                         style: TextStyle(
+                             fontSize: 23,
+                             color: Colors.tealAccent,
+                             fontFamily: 'sedg'),),
+                     ),
+
+                   ),
+                   // child: Text("BUILDING A FUTURE TOGETHER.",
+                   //   style: TextStyle(
+                   //       fontSize: 23,
+                   //       color: Colors.yellow,
+                   //       fontFamily: 'sedg'),),
+                 ),
+                 Padding(
+                   padding: const EdgeInsets.only(top: 250, left: 30, right: 30),
+                   child: Container(
+                     alignment: AlignmentDirectional.bottomCenter,
+                     child: Text("On the outside areas of Startblok you will find sports fields and a clubhouse.",
+                       style: TextStyle(fontSize: 17, color: Colors.yellowAccent, fontWeight: FontWeight.bold ),),
+                   ),
+                 )
+               ],
+
+             ),
+           ),
+
+           Padding(
+             padding: const EdgeInsets.only(top: 20),
+             child: Stack(
+               children: [
+                 Container(
+                   width: MediaQuery.of(context).size.width,
+                   height: MediaQuery.of(context).size.height*0.37,
+                   margin: EdgeInsets.all(10),
+                   //padding: EdgeInsets.all(20),
+                   decoration: BoxDecoration(
+                     borderRadius: BorderRadius.circular(10),
+                     color: Color.fromARGB(150, 10, 50, 60),
+                   ),
+                   child: Container(
+                     alignment: AlignmentDirectional.topCenter,
+                     width: MediaQuery.of(context).size.width,
+                     height: MediaQuery.of(context).size.height,
+                     decoration: BoxDecoration(
+                         borderRadius: BorderRadius.circular(250),
+                         image: DecorationImage(
+                           image: AssetImage("assets/images/jumping peoples.jpg"),
+                         )
+                     ),
+                     child: Padding(
+                       padding: const EdgeInsets.only(top: 35),
+                       child: Text("A place to meet each other.",
+                         style: TextStyle(
+                             fontSize: 23,
+                             color: Colors.tealAccent,
+                             fontFamily: 'sedg'),),
+                     ),
+
+                   ),
+                   // child: Text("BUILDING A FUTURE TOGETHER.",
+                   //   style: TextStyle(
+                   //       fontSize: 23,
+                   //       color: Colors.yellow,
+                   //       fontFamily: 'sedg'),),
+                 ),
+                 Padding(
+                   padding: const EdgeInsets.only(top: 250, left: 30, right: 30),
+                   child: Container(
+                     alignment: AlignmentDirectional.bottomCenter,
+                     child: Text("On the outside areas of Startblok you will find sports fields and a clubhouse.",
+                       style: TextStyle(fontSize: 17, color: Colors.yellowAccent, fontWeight: FontWeight.bold ),),
+                   ),
+                 )
+               ],
+
+             ),
+           ),
+         ]
+       );
+
+  }
+}
+
+
+// Row(
+// children: [
+// Container(
+// height: 100,
+// width: 100,
+// color: Colors.yellow,
+// ),
+// SizedBox(
+// width: 10,
+// ),
+//
+// Container(
+// height: 100,
+// width: 100,
+// color: Colors.yellow,
+// ),
+//
+//
+// ],
+// ),
