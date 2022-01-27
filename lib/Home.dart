@@ -513,14 +513,14 @@ class BlocksView extends StatelessWidget {
                      width: MediaQuery.of(context).size.width,
                      height: MediaQuery.of(context).size.height,
                      decoration: BoxDecoration(
-                         borderRadius: BorderRadius.circular(250),
+                         borderRadius: BorderRadius.circular(40),
                          image: DecorationImage(
-                           image: AssetImage("assets/images/jumping peoples.jpg"),
+                           image: AssetImage("assets/images/clubhuis.jpeg"),
                          )
                      ),
                      child: Padding(
-                       padding: const EdgeInsets.only(top: 35),
-                       child: Text("A place to meet each other.",
+                       padding: const EdgeInsets.only(top: 8),
+                       child: Text("CLUB HUIS.",
                          style: TextStyle(
                              fontSize: 23,
                              color: Colors.tealAccent,
@@ -567,7 +567,7 @@ class BlocksView extends StatelessWidget {
                      decoration: BoxDecoration(
                          borderRadius: BorderRadius.circular(250),
                          image: DecorationImage(
-                           image: AssetImage("assets/images/jumping peoples.jpg"),
+                           image: AssetImage("assets/images/sunrise.jpg"),
                          )
                      ),
                      child: Padding(
